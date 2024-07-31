@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, red, pink, rgb(0, 255, 195), rgb(0, 191, 255), rgb(0, 94, 255), rgb(204, 0, 255));
+    margin: 0;
+    padding: 20px;
+}
+
+form {
+    max-width: 700px;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #ffffff67;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+form:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+h1 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+h1:hover {
+    color: #0056b3;
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"], textarea, select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    background-color: #ffffff86;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, input[type="date"]:focus, textarea:focus, select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+#class{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    background-color: #ffffff86;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;   
+}
+textarea {
+    resize: vertical;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f9f9f97a;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+#contact-info {
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    form {
+        padding: 15px;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 14px;
+    }
+}
