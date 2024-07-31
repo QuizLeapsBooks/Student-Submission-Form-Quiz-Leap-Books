@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Submission Form Quiz Leap Books</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="https://cdn.pixabay.com/photo/2012/04/14/12/40/letter-q-33754_1280.png">
+<meta name="description" content="QuizLeapBooks offers free NCERT and ICSE textbook questions and interactive quizzes for Classes 6, 7, and 8. Enhance your learning and excel in exams with our comprehensive resources.">
+<meta name="keywords" content="NCERT Quiz, ICSE Quiz, Class 6 Questions, Class 7 Questions, Class 8 Questions, Free Textbook Questions, Educational Quizzes">
+<meta property="og:title" content="QuizLeapBooks | Free NCERT and ICSE Textbook Questions & Quizzes">
+<meta property="og:description" content="Explore QuizLeapBooks for a wide range of free questions and quizzes from NCERT and ICSE textbooks for Classes 6, 7, and 8. Boost your study efforts and ace your exams with our valuable resources.">
+<meta property="og:image" content="https://cdn.pixabay.com/photo/2012/04/14/12/40/letter-q-33754_1280.png">
+<meta property="og:url" content="">
+<meta name="twitter:title" content="QuizLeapBooks | Free NCERT and ICSE Textbook Questions & Quizzes">
+<meta name="twitter:description" content="Discover free questions and engaging quizzes from NCERT and ICSE textbooks for Classes 6, 7, and 8 on QuizLeapBooks. Elevate your exam preparation with our educational resources.">
+<meta name="twitter:image" content="https://cdn.pixabay.com/photo/2012/04/14/12/40/letter-q-33754_1280.png">
+<meta name="twitter:card" content="summary_large_image">
+
+</head>
+<body>
+    <form id="student-form" action="https://formspree.io/f/mnnadpge" method="POST">
+        <h1>Student Submission Form</h1>
+        
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="class">Class:</label>
+        <input type="number" id="class" name="class" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" placeholder="Optional">
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="address">Permanent Address:</label>
+        <textarea id="address" name="address" rows="3" placeholder="Optional"></textarea>
+
+        <label for="current-address">Current Address:</label>
+        <textarea id="current-address" name="current-address" rows="3" placeholder="Optional"></textarea>
+
+        <fieldset>
+            <legend>How can we contact you?</legend>
+            <input type="radio" id="contact-email" name="contact-method" value="email" required>
+            <label  style="display: inline;" for="contact-email">Email</label>
+            <input type="radio" id="contact-phone" name="contact-method" value="phone" required>
+            <label  style="display: inline;" for="contact-phone">Phone</label>
+        </fieldset>
+
+        <div id="contact-info">
+            <!-- Contact info fields will be injected here by JavaScript -->
+        </div>
+
+        <label for="preferred-time">Preferred Contact Time:</label>
+        <select id="preferred-time" name="preferred-time">
+            <option value="morning">Morning</option>
+            <option value="afternoon">Afternoon</option>
+            <option value="evening">Evening</option>
+        </select>
+
+        <label for="comments">Comments/Suggestions:</label>
+        <textarea id="comments" name="comments" rows="4"></textarea>
+
+        <!-- Text-based Captcha -->
+        <div id="captcha-container">
+            <canvas id="captcha-canvas" width="200" height="50"></canvas>
+            <label for="captcha-input">Captcha:</label>
+            <input type="text" id="captcha-input" name="captcha-input" required>
+            <input type="hidden" id="captcha-solution" name="captcha-solution">
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+    <script src="javascript.js"></script>
+</body>
+</html>
